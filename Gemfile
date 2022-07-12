@@ -11,7 +11,8 @@ gem 'rake'
 gem 'pony'
 gem 'faker'
 gem 'uuid'
-
+gem 'mimemagic', '~> 0.4.3'
+gem 'activesupport', '~> 5.0.0.1'
 group :test do
   gem 'selenium-webdriver', '~> 3.4.0'
   gem 'rspec', '~> 3.5.0'

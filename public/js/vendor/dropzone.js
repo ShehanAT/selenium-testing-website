@@ -347,6 +347,7 @@
       },
       processingmultiple: noop,
       uploadprogress: function(file, progress, bytesSent) {
+        console.log("File uploading...");
         var node, _i, _len, _ref, _results;
         if (file.previewElement) {
           _ref = file.previewElement.querySelectorAll("[data-dz-uploadprogress]");
