@@ -61,7 +61,8 @@ class Public < Sinatra::Base
       erb :uploaded_image, locals: { file: image_file_path }
     else
       puts "non-image file uploaded..."
-      erb :uploaded_non_image, locals: { file: file_upload_path }
+      non_image_file_path = '/uploads/' + file[:filename]
+      erb :uploaded_non_image, locals: { file: non_image_file_path }
     end
     # erb :uploaded, locals: { file: file }
   end
