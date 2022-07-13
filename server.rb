@@ -49,8 +49,10 @@ class Public < Sinatra::Base
     file_type = 'type'
     if accessable_file[file_type][0, 5] === "image"
       puts "image file uploaded"
+      erb :image_file_uploaded
     else
       puts "non-image file uploaded..."
+      erb :non_image_file_uploaded
     end 
     # file_contents = File.read(file.tempfile)
     # puts(file_contents)
